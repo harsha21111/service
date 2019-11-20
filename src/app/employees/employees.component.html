@@ -1,0 +1,20 @@
+
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Employee
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-grid>
+      <ion-row  *ngFor="let employee of employees">
+        <ion-col>
+          {{ employee.employeeId }}
+          {{ employee.name }}
+          {{ employee.place}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
